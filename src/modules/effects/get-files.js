@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = ({ io }) => async basepaths => {
 
     const groupedByBasepath = await Promise.all(basepaths.map(async basepath => {
-        const files = await io.glob('**', { cwd: basepath, stats: true });
+        const files = await io.glob('**', { cwd: basepath, stats: true, dot: true, ignore: ['.DS_Store'] });
         return files.map(f => {
             const relpath = f.path;
             return {

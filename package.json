@@ -1,6 +1,6 @@
 {
     "name": "duplicate-file-finder",
-    "version": "0.11.0",
+    "version": "0.12.0",
     "description": "Finds duplicate files across given directories without hashing.",
     "license": "ISC",
     "homepage": "https://github.com/mattriley/node-duplicate-file-finder",
